@@ -37,7 +37,7 @@
   --shell:        1240px;
   --gutter:       clamp(20px, 5vw, 64px);
   --radius:       4px;
-  --header-h:     104px;
+  --header-h:     84px;
   --ease:         cubic-bezier(.22,.61,.36,1);
 
   --shadow-sm:    0 1px 2px rgba(20,22,24,.06), 0 4px 14px rgba(20,22,24,.06);
@@ -139,6 +139,13 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .logo { display: inline-flex; align-items: center; gap: 13px; }
 .logo__mark { flex: none; height: 82px; width: auto; display: block; color: var(--graphite); }
 .site-header[data-scrolled] .logo__mark { height: 62px; transition: height .3s var(--ease); }
+
+/* text logo (GDR has no real logo — built as type) */
+.logo__text { display: flex; flex-direction: column; line-height: 1; border-left: 3px solid var(--accent); padding-left: 13px; }
+.logo__text-main { font-family: var(--font-display); font-weight: 900; font-size: clamp(1.35rem, 2.2vw, 1.72rem); letter-spacing: -.01em; color: #ffffff; text-transform: none; }
+.logo__text-accent { color: var(--accent); }
+.logo__text-sub { font-family: var(--font-display); font-weight: 700; font-size: .66rem; letter-spacing: .3em; text-transform: uppercase; color: var(--concrete-2); margin-top: 6px; }
+.site-header[data-scrolled] .logo__text-main { font-size: clamp(1.2rem, 2vw, 1.5rem); transition: font-size .3s var(--ease); }
 .logo__word { display: flex; flex-direction: column; line-height: 1.05; }
 .logo__word-main {
   font-family: var(--font-display); font-weight: 800; font-size: 1.16rem;
@@ -170,7 +177,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   height: var(--header-h);
   transition: height .3s var(--ease);
 }
-.site-header[data-scrolled] .header__inner { height: 80px; }
+.site-header[data-scrolled] .header__inner { height: 66px; }
 .nav { display: flex; align-items: center; gap: clamp(14px, 1.8vw, 30px); margin-left: auto; }
 .nav a {
   font-family: var(--font-display); font-weight: 600; font-size: .92rem;

@@ -55,12 +55,13 @@ get the still frame. Plays on mobile and desktop; the transparent nav overlays i
 ---
 
 ## Notes for the client
-- **Logo** — the header/footer use the company's actual wordmark, keyed from its dark
-  background to a transparent white PNG so it sits cleanly on the dark nav. It's a fairly
-  low-resolution source; a vector or higher-res logo can replace `assets/img/logo-white.png`.
-- **Photos** — the service images come straight from the current site (they appear to be
-  stock/service photos). Drop real GDR project photos into `assets/img/` with the same
-  filenames to personalize the gallery.
+- **Logo** — GDR has no real logo, so one was built **as type**: a two-line wordmark
+  ("GDR **Concrete** / CONSTRUCTION LLC") in the brand font with a sky-blue accent bar. It's
+  pure HTML/CSS, so it stays crisp at any size and is trivial to edit. Swap in a real logo
+  image later if one is designed.
+- **Photos** — the gallery uses the higher-resolution project photos pulled from the site's
+  service pages (real crews finishing driveways, foundation footings, walkways, retaining
+  walls). Drop more GDR project photos into `assets/img/` to expand the gallery.
 - **Testimonial** — the single review shown is the real one from the source site (Mitchell
   McCarthy). Add more as they come in.
 - **Estimate form** — front-end only; wire it to email or a CRM (Formspree, Netlify Forms,
